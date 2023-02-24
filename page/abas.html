@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="../img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../css/abas_css.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Tangerine|Inconsolata|Cantarell|Courgette" rel="stylesheet">
+  <link rel="stylesheet" href="../css/form_css_2.css">
+  <title>Abas</title>
+</head>
+
+<body>
+
+  <section class="container-abas">
+
+    <input type="radio" name="abas" class="abas" id="aba1">
+    <label for="aba1" class="abas_cab">Cliente</label>
+    <div class="espaco">
+      <!--Início do formulário de cliente-->
+
+
+      <section id="setor-cadastro">
+        <form class="form-cadastro">
+          <!-- Cabeçalho do Formulário -->
+          <div class="cabeca">
+            <h1>Cadastro de clientes</h1>
+          </div>
+          <div class="form-corpo">
+
+            <div class="content" style="border: 1px solid red;">
+              <div class="content-item">
+                <input type="submit" value="Novo" id="btn-novo">
+                <label for="loc-nome">Nome</label>
+                <input type="text" name="loc-nome" style="margin: 3px;">
+                <label for="loc-cod">Cod</label>
+                <input type="text" name="loc-cod" style="width: 30%;">
+                <input type="submit" value="Salvar" class="botoes">
+                <input type="submit" value="Imprimir" class="botoes">
+                <input type="submit" value="Excluir" class="botoes">
+                <input type="submit" value="<<" class="botoes">
+                <input type="submit" value="<" class="botoes">
+                <input type="submit" value=">" class="botoes">
+                <input type="submit" value=">>" class="botoes">
+              </div>
+            </div>
+
+            <div class="linha" style="border: 1px solid red;">
+              <div class="campo-entrada">
+                <label for="cod_cli">Código</label>
+                <input type="text" name="cod_cli" id="txt_cod_cli" required>
+              </div>
+              <div class="campo-entrada">
+                <label for="tipo_cli">Tipo</label>
+                <select name="tipo_cli" id="txt_tipo_cli" required>
+                  <option value="01">Física</option>
+                  <option value="02">Jurídica</option>
+                </select>
+              </div>
+              <div class="campo-entrada">
+                <label for="cpf_cli">CPF / CPNJ</label>
+                <input type="text" name="cpf_cli" id="txt_cpf_cli" maxlength="15" required>
+              </div>
+              <div class="campo-entrada">
+                <label for="ie_cli">IE</label>
+                <input type="text" name="ie_cli" id="txt_ie_cli" maxlength="9">
+              </div>
+            </div>
+
+
+            <div class="linha" style="border: 1px solid red;">
+              <div class="campo-entrada-diverso" style="width: 97%;">
+                <label for="nome_cli">Nome</label>
+                <input type="text" name="nome_cli" id="txt_nome_cli" required>
+              </div>
+              <div class="campo-entrada-diverso">
+                <label for="nasc_cli">Nasc</label>
+                <input type="date" name="nasc_cli" id="txt_nasc_cli">
+              </div>
+            </div>
+
+
+            <div class="linha" style="border: 1px solid red;">
+              <div class="campo-entrada">
+                <label for="rg_cli">RG</label>
+                <input type="text" name="rg_cli" id="txt_rg_cli" maxlength="9">
+              </div>
+              <div class="campo-entrada">
+                <label for="cnh_cli">CNH</label>
+                <input type="text" name="cnh_cli" id="txt_cnh_cli" maxlength="9">
+              </div>
+              <div class="campo-entrada">
+                <label for="cat_cli">CAT</label>
+                <select name="cat_cli" id="txt_cat_cli">
+                  <option value="a">A</option>
+                  <option value="b">B</option>
+                  <option value="c">C</option>
+                  <option value="d">D</option>
+                  <option value="e">E</option>
+                </select>
+              </div>
+              <div class="campo-entrada">
+                <label for="e_civil_cli">Estado Civil</label>
+                <select name="e_civil_cli" id="txt_e_civil_cli">
+                  <option value="solteiro">Solteiro</option>
+                  <option value="casado">Casado</option>
+                  <option value="viuvo">Viúvo</option>
+                  <option value="divorciado">Divorciado</option>
+                </select>
+              </div>
+              <div class="campo-entrada">
+                <label for="dta_cad_cli">Dta. Cad</label>
+                <input type="date" name="dta_cad_cli" id="txt_dta_cad_cli" required>
+              </div>
+            </div>
+
+            <div class="linha" style="border: 1px solid red;">
+              <div class="campo-entrada-diverso" style="width: 12%;">
+                <label fpr="cep_cli">CEP</label>
+                <input type="text" name="cep_cli" id="txt_cep_cli" maxlength="8" required>
+              </div>
+              <div class="campo-entrada-diverso" style="width: 6%;">
+                <label for="uf_cli">UF</label>
+                <input type="text" name="uf_cli" id="txt_uf_cli" maxlength="2">
+              </div>
+              <div class="campo-entrada">
+                <label for="cidade_cli">Cidade</label>
+                <input type="text" name="cidade_cli" id="txt_cidade_cli" required>
+              </div>
+              <div class="campo-entrada-diverso" style="width: 25%;">
+                <label for="bairro_cli">Bairro</label>
+                <input type="text" name="bairro_cli" id="txt_bairro_cli" required>
+              </div>
+            </div>
+
+            <div class="linha" style="border: 1px solid red;">
+              <div class="campo-entrada-diverso" style="width: 70%;">
+                <label for="rua_cli">Rua</label>
+                <input type="text" name="rua_cli" id="txt_rua_cli" required>
+              </div>
+              <div class="campo-entrada-diverso" style="width: 10%;">
+                <label for="numero_cli">Número</label>
+                <input type="text" name="numero_cli" id="txt_num_cli" maxlength="4" required>
+              </div>
+              <div class="campo-entrada-diverso" style="width: 20%;">
+                <label for="complemento_cli">Complemento</label>
+                <input type="text" name="complemento_cli" id="txt_complemento_cli">
+              </div>
+            </div>
+
+            <div class="linha" style="border: 1px solid red;">
+              <div class="campo-entrada-diverso" style="width: 12.5%;">
+                <label for="telefone_cli">Telefone</label>
+                <input type="text" name="telefone_cli" id="txt_telefone_cli" maxlength="8">
+              </div>
+              <div class="campo-entrada-diverso" style="width: 15%;">
+                <label for="celular_cli">Celular</label>
+                <input type="text" name="celular_cli" id="txt_celular_cli" maxlength="11" required>
+              </div>
+              <div class="campo-entrada">
+                <label for="email_cli">E-mail</label>
+                <input type="email" name="email_cli" id="txt_email_cli" required>
+              </div>
+            </div>
+
+            <!--  obs   -->
+            <div class="linha">
+              <div class="campo-entrada">
+                <label for="obs_cli">Observações</label>
+                <textarea name="obs_cli" id="txt_obs_cli"></textarea>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+    <!-- Fim formulário de cadastro de cliente-->
+
+    <input type="radio" name="abas" class="abas" id="aba2">
+    <label for="aba2" class="abas_cab">Fornecedor</label>
+    <div class="espaco">
+      <!--conteúdo da aba aqui aqui-->
+      <section id="setor-cadastro">
+        <form class="form-cadastro">
+          <!-- Cabeçalho do Formulário -->
+          <div class="cabeca">
+            <h1>Cadastro de Fornecedores</h1>
+          </div>
+          <div class="form-corpo">
+            <div class="linha" style="border: 1px solid red;">
+              <div class="campo-entrada">
+                <label for="cod_for">Código</label>
+                <input type="number" name="cod_for" id="txt_cod_for" required>
+              </div>
+              <div class="campo-entrada">
+                <label for="cnpj_for">CNPJ</label>
+                <input type="text" name="cnpj_for" id="txt_cnpj_for" maxlength="15" required>
+              </div>
+              <div class="campo-entrada">
+                <label for="ie_for">IE</label>
+                <input type="text" name="ie_for" id="txt_ie_for" maxlength="9">
+              </div>
+              <div class="campo-entrada">
+                <label for="i_municipal_for">I. Municipal</label>
+                <input type="text" name="i_municipal_for" id="txt_i_municipal_for" maxlength="9">
+              </div>
+            </div>
+
+
+            <div class="linha" style="border: 1px solid red;">
+              <div class="campo-entrada">
+                <label for="nome_fan_for">Nome fan</label>
+                <input type="text" name="nome_fan_for" id="txt_nome_fan_for" required>
+              </div>
+              <div class="campo-entrada">
+                <label for="razao_social_for">Razão social</label>
+                <input type="text" name="razao_social_for" id="txt_razao_social_for" required>
+              </div>
+            </div>
+
+            <div class="linha" style="border: 1px solid red;">
+              <div class="campo-entrada-diverso" style="width: 12%;">
+                <label for="cep_for">CEP</label>
+                <input type="text" name="cep_for" id="txt_cep_for" maxlength="8" required>
+              </div>
+              <div class="campo-entrada-diverso" style="width: 6%;">
+                <label for="uf_for">UF</label>
+                <input type="text" name="uf_for" id="txt_uf_for" maxlength="2">
+              </div>
+              <div class="campo-entrada">
+                <label for="cidade_for">Cidade</label>
+                <input type="text" name="cidade_for" id="txt_cidade_for" required>
+              </div>
+              <div class="campo-entrada-diverso" style="width: 25%;">
+                <label for="bairro_for">Bairro</label>
+                <input type="text" name="bairro_for" id="txt_bairro_for" required>
+              </div>
+            </div>
+
+            <div class="linha" style="border: 1px solid red;">
+              <div class="campo-entrada-diverso" style="width: 70%;">
+                <label for="rua_for">Rua</label>
+                <input type="text" name="rua_for" id="txt_rua_for" required>
+              </div>
+              <div class="campo-entrada-diverso" style="width: 10%;">
+                <label for="numero_for">Número</label>
+                <input type="text" name="numero_for" id="txt_numero_for" maxlength="4" required>
+              </div>
+              <div class="campo-entrada-diverso" style="width: 20%;">
+                <label for="complemento_for">Complemento</label>
+                <input type="text" name="complemento_for" id="txt_complemento_for">
+              </div>
+            </div>
+
+            <div class="linha" style="border: 1px solid red;">
+              <div class="campo-entrada-diverso" style="width: 12.5%;">
+                <label for="telefone">Telefone</label>
+                <input type="text" name="telefone_for" id="txt_telefone_for" maxlength="8">
+              </div>
+              <div class="campo-entrada-diverso" style="width: 15%;">
+                <label for="celular_for">Celular</label>
+                <input type="text" name="celular_for" id="txt_celular_for" maxlength="11" required>
+              </div>
+              <div class="campo-entrada">
+                <label for="email_for">E-mail</label>
+                <input type="email" name="email_for" id="txt_email_for" required>
+              </div>
+            </div>
+
+            <div class="linha">
+              <div class="campo-entrada">
+                <label for="obs_for">Observações</label>
+                <textarea name="obs_for" id="txt_obs_for"> </textarea>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <input type="radio" name="abas" class="abas" id="aba3" checked >
+    <label for="aba3" class="abas_cab">Produto</label>
+    <div class="espaco">
+      <!--conteúdo da aba aqui aqui-->
+      <section id="setor-cadastro">
+        <form class="form-cadastro">
+          <!-- Cabeçalho do Formulário -->
+          <div class="cabeca">
+            <h1>Cadastro de produtos</h1>
+          </div>
+          <div class="form-corpo">
+            <div class="linha" style="border: 1px solid red;">
+              <div class="campo-entrada-diverso" style="width: 20%;">
+                <label for="cod_interno_pro">Código Interno</label>
+                <input type="number" name="cod_interno_pro" id="txt_cod_interno_pro" required>
+              </div>
+              <div class="campo-entrada">
+                <label for="cod_barras_pro">Código de barras</label>
+                <input type="text" name="cod_barras_pro" id="txt_cod_barras_pro" maxlength="15" required>
+              </div>
+              <div class="campo-entrada-diverso" style="width: 10%;">
+                <label for="unidade_pro">Unidade</label>
+                <input type="text" name="unidade_pro" id="txt_unidade_pro" maxlength="9" required>
+              </div>
+            </div>
+
+
+            <div class="linha" style="border: 1px solid red;">
+              <div class="campo-entrada-diverso" style="width: 20%;">
+                <label for="quantidade_pro">Quantidade</label>
+                <input type="text" name="quantidade_pro" id="txt_quantidade_pro" required>
+              </div>
+              <div class="campo-entrada">
+                <label for="descricao_pro">Descrição</label>
+                <input type="text" name="descricao_pro" id="txt_descricao_pro" required>
+              </div>
+            </div>
+
+            <div class="linha" style="border: 1px solid red;">
+              <div class="campo-entrada-diverso" style="width: 25%;">
+                <label for="cod_fornecedor_pro">Código fornecedor</label>
+                <input type="text" name="cod_fornecedor_pro" id="txt_cod_fornecedor_pro" maxlength="9">
+              </div>
+              <div class="campo-entrada-diverso" style="margin-top: 3%;">
+                <input type="submit" value="..." name="procurar_pro" id="txt_procurar_pro">
+              </div>
+              <div class="campo-entrada-diverso" style="width: 70%;">
+                <label for="fornecedor_pro">Fornecedor</label>
+                <input type="text" name="fornecedor_pro" id="txt_fornecedor_pro">
+              </div>
+            </div>
+
+            <div class="linha" style="border: 1px solid red;">
+              <div class="campo-entrada-diverso" style="width: 70%;">
+                <label for="rua_pro">Rua</label>
+                <input type="text" name="rua_pro" id="txt_rua_pro">
+              </div>
+              <div class="campo-entrada-diverso" style="width: 10%;">
+                <label for="numero_pro">Número</label>
+                <input type="text" name="numero_pro" id="txt_numero_pro" maxlength="4">
+              </div>
+              <div class="campo-entrada">
+                <label for="complemento_pro">Complemento</label>
+                <input type="text" name="complemento_pro" id="txt_complemento_pro">
+              </div>
+            </div>
+
+            <div class="linha" style="border: 1px solid red;">
+              <div class="campo-entrada-diverso" style="width: 12.5%;">
+                <label for="telefone_pro">Telefone</label>
+                <input type="text" name="telefone_pro" id="txt_telefone_pro" maxlength="8">
+              </div>
+              <div class="campo-entrada-diverso" style="width: 15%;">
+                <label for="celular_pro">Celular</label>
+                <input type="text" name="celular_pro" id="txt_celular_pro" maxlength="11">
+              </div>
+              <div class="campo-entrada">
+                <label for="email_pro">E-mail</label>
+                <input type="email" name="email_pro" id="txt_email_pro">
+              </div>
+            </div>
+
+            <div class="linha" style="border: 1px solid red;">
+              <div class="linha" style="border: 1px solid red;">
+                <fieldset  class="campo-entrada-fieldset">
+                  <legend>Definições de entrada</legend>
+                  <div class="campo-entrada-fieldset">
+                    <label for="entrada_pro">Entrada</label>
+                    <input type="text" name="entrada_pro" id="txt_entrada_pro" required>
+                  </div>
+                  <div class="campo-entrada-fieldset">
+                    <label for="custo_pro">Custo</label>
+                    <input type="text" name="custo_pro" id="txt_custo_pro" required>
+                  </div>
+                  <div class="campo-entrada-fieldset">
+                    <label for="lucro_pro">Lucro</label>
+                    <input type="text" name="lucro_pro" id="lucro_pro">
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="linha" style="border: 1px solid red;">
+                <fieldset class="campo-entrada-fieldset">
+                  <legend>Controle de estoque</legend>
+                  <div class="campo-entrada-fieldset">
+                    <label for="min_pro">Min</label>
+                    <input type="text" name="min_pro" id="txt_min_pro" required>
+                  </div>
+                  <div class="campo-entrada-fieldset">
+                    <label for="max_pro">Max</label>
+                    <input type="text" name="max_pro" id="txt_max_pro" required>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+
+    </div>
+
+    <input type="radio" name="abas" class="abas" id="aba4">
+    <label for="aba4" class="abas_cab">Relatório</label>
+    <div class="espaco">
+      <!--conteúdo da aba aqui aqui-->
+      <section id="setor-cadastro">
+        <form class="form-relatorio">
+          <!-- Cabeçalho do Formulário -->
+          <div class="cabeca">
+            <h1>Relatório de clientes</h1>
+          </div>
+          <div class="form-corpo">
+
+            <div class="linha-rel" style="border: 1px solid red;">
+              <div class="campo-entrada">
+                <label for="cod_inicial_rel">Cód. Inicial</label>
+                <input type="text" name="cod_inicial_rel" id="txt_cod_inicial_rel">
+              </div>
+              <div class="campo-entrada">
+                <label for="cod_final_rel">Cód. Final</label>
+                <input type="text" name="cod_final_rel" id="txt_cod_final_rel">
+              </div>
+            </div>
+
+            <div class="linha-rel" style="border: 1px solid red;">
+              <div class="campo-entrada">
+                <label for="bairro_rel">Bairro</label>
+                <input type="text" name="bairro_rel" id="txt_bairro_rel">
+              </div>
+            </div>
+
+            <div class="linha-rel" style="border: 1px solid red;">
+              <div class="campo-entrada">
+                <label for="dta_cad_inicial_rel">Dta. Cad inicial</label>
+                <input type="text" name="dta_cad_incial_rel" id="txt_dta_cad_incial_rel">
+              </div>
+              <div class="campo-entrada">
+                <label for="dta_cad_final_rel">Dta. Cad final</label>
+                <input type="text" name="dta_cad_final_rel" id="txt_dta_cad_final_rel">
+              </div>
+            </div>
+
+            <div class="linha-rel" style="border: 1px solid red;">
+              <div class="campo-entrada">
+                <label for="cidade_rel">Cidade</label>
+                <input type="text" name="cidade_rel" id="txt_cidade_rel">
+              </div>
+            </div>
+
+            <div class="linha-rel" style="border: 1px solid red;">
+              <div class="campo-entrada">
+                <label class="dta_nasc_inicial_rel">Dta. Nasc inicial</label>
+                <input type="text" name="dta_nasc_inicial_rel" id="txt_dta_nasc_incial_rel">
+              </div>
+              <div class="campo-entrada">
+                <label class="dta_nasc_final_rel">Dta. Nasc final</label>
+                <input type="text" name="dta_nasc_final_rel" id="txt_dta_nasc_final_rel">
+              </div>
+            </div>
+
+            <!--  rodape   -->
+            <div class="form-rodape1">
+              <button class="btn">Gerar</button>
+              <button class="btn">Limpar</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </section>
+
+
+</body>
+
+</html>
