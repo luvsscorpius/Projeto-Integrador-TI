@@ -1,3 +1,19 @@
+
+  * {
+    margin: 0;
+    font-family: Arial; 
+    box-sizing: border-box;
+}
+
+div {
+    margin: 5px;
+}
+
+
+h1 {
+    margin-left: 5px;
+}
+
 /*variaveis*/
 :root {
     --cor_fundo:#EFF0F1;
@@ -12,7 +28,7 @@
   
   .container-abas {
       display: flex;
-      margin-top: 6.4%;	
+      margin-top: 1%;	
       align-items: center;
       justify-content: center;
     }
@@ -32,10 +48,11 @@
       align-items: center;
       justify-content: center;
       position: fixed; /**/
-      top: 40px;
-      width: 99%;
-      height: 60%;
+      top: 47px;
+      width: 50%;
+      height: 76%;
       opacity: 0;
+
   }
   
   input.abas:checked + .abas_cab + div {
@@ -67,83 +84,37 @@
       font-size: 15px;
   }
 
-  .espaco {
-    padding: 6%;
-    max-width: 1000;
-    min-width: 300;
-  }
-  
-  * {
-      margin: 0;
-      font-family: Arial; 
-      box-sizing: border-box;
-  }
-  
-  div {
-      margin: 5px;
-  }
-  
-  
-  h1 {
-      margin-left: 5px;
-  }
-  
-  .localizar {
-      display: flex;
-  }
-  
   #setor-cadastro {
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: none;
-  }
-  
-  .form-cadastro {
-      flex: 1;
-      max-width: 900px;
-      border-radius: 10px;
-      background-color: #EEF0F1;
-      border: 1px solid #999;
-      margin-top: auto;
-      margin-bottom: auto;
-  }
-  
-  .cabeca {
-      padding: 15px 0;
-      border-bottom: 1px solid #cccccc;
-      text-align: center;
-      color: #666;
-  }
-  
-  .form-corpo {
-      padding: 5px 10px;
-      background: #eef0f1;
-  }
-  
-  .linha {
-      display: flex;
-  }
-
-  .linha-rel {
+    height: 100%;
     display: flex;
-    flex-direction: column;
-  }
+    justify-content: center;
+    align-items: center;
+    overflow: none;
+}
 
-  .linha-rel label {
-    display: flex;
-  }
+.form-cadastro {
+    flex: 1;
+    max-width: 900px;
+    border-radius: 10px;
+    background-color: #EEF0F1;
+    border: 1px solid #999;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
+.cabeca {
+    padding: 15px 0;
+    border-bottom: 1px solid #cccccc;
+    text-align: center;
+    color: #666;
+}
 
-  .campo-entrada {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      margin: 5px 5px;
-  }
+.form-corpo {
+    padding: 5px 10px;
+    background: #eef0f1;
+}
 
-  .content {
+.content {
     display: flex;
     flex-direction: column;
   }
@@ -197,108 +168,131 @@
     color: white;
   }
 
+  .linha {
+    display: flex;
+}
+
+.campo-entrada {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5px;
+}
+
+.campo-entrada-diverso {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #1BBA93;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"], 
+input[type="date"],
+select, 
+textarea {
+    width: 100%;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #666;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    background-color: white;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+#form-cadastro-for {
+    flex: 1;
+    max-width: 900px;
+    border-radius: 10px;
+    background-color: #EEF0F1;
+    border: 1px solid #999;
+    margin-top: 2px;
+    margin-bottom: auto;
+}
+
+#form-cadastro-pro {
+    flex: 1;
+    width: 900px;
+    border-radius: 10px;
+    background-color: #EEF0F1;
+    border: 1px solid #999;
+    margin-top: 2px;
+    margin-bottom: auto;
+}
+
+.linha-rel {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .linha-rel label {
+    display: flex;
+  }
+
   .campo-entrada-fieldset {
       display: flex;
       flex-direction: row;
       margin: 5px;
   }
 
-  .campo-entrada-diverso {
-    display: flex;
-    flex-direction: column;
+  #form-relatorio {
+    flex: 1;
+    width: 900px;
+    border-radius: 10px;
+    background-color: #EEF0F1;
+    border: 1px solid #999;
+    margin-top: 2px;
+    margin-right: 7px;
+    margin-bottom: auto;
 }
-  
-  .form-rodape {
-      display: flex;
-      justify-content: flex-end;
-      padding: 10px;
-  }
-  
-  .form-rodape1 {
-      display: flex;
-      justify-content: space-around;
-      padding: 10px;
-  }
-  
-  .btn {
-      padding: 10px 20px;
-      background-color: #1BBA93;
-      font-size: 17px;
-      border: none;
-      border-radius: 10px;
-      color: #BCF5E7;
-  }
-  
-  .btn-acesso {
-      padding: 10px 20px;
-      background-color: #666;
-      font-size: 17px;
-      border: none;
-      border-radius: 10px;
-      color: white;
-      text-decoration: none;
-  }
-  
-  .btn-acesso:hover {
-      background-color: #1BBA93;
-      transition: .4s;
-  }
-  
-  
-  label {
-      color: #1BBA93;
-      font-size: 17px;
-      font-weight: 600;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  input[type="number"], 
-  input[type="date"],
-  select, 
-  textarea {
-      width: 100%;
-      font-size: 18px;
-      padding-left: 10px;
-      padding-right: 10px;
-      color: #666;
-      border: 1px solid #d6d6d6;
-      border-radius: 4px;
-      background-color: white;
-  }
-  
-  textarea {
-      resize: none;
-      height: 100px;
-  }
-  
-  .label_entrada {
-      margin-right: 10px;
-      margin-left: 10px;
-  }
-  
-  .btnloc {
-      border-radius: 5px;
-  }
-  
-  .form-relatorio {
-      flex: 1;
-      width: 400px;
-      border-radius: 10px;
-      background-color: #EEF0F1;
-      border: 1px solid #999;
-      margin-top: auto;
-      margin-bottom: auto;
-      text-align: center;
-  }
 
-  fieldset{
-    border-radius: 5px;
-    margin: 5px;
-  }
-  
-  fieldset label {
-    margin: 5px;
-  }
-  
+.form-rodape {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.form-rodape1 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #1BBA93;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    color: #BCF5E7;
+}
+
+.btn-acesso {
+    padding: 10px 20px;
+    background-color: #666;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-acesso:hover {
+    background-color: #1BBA93;
+    transition: .4s;
+}
+
+
+
