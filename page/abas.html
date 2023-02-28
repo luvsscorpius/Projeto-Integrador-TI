@@ -14,13 +14,13 @@
 
 <body>
 
-  <section class="container-abas">
+  <section class="container-abas" >
 
-    <input type="radio" name="abas" class="abas" id="aba1">
+    <input type="radio" name="abas" class="abas" id="aba1" checked>
     <label for="aba1" class="abas_cab">Cliente</label>
-    <div >
-      <section id="setor-cadastro">
-        <form class="form-cadastro">
+    <div style="border: 1px solid red;">
+      <section id="setor-cadastro" >
+        <form class="form-cadastro" >
           <!-- Cabeçalho do Formulário -->
           <div class="cabeca">
             <h1>Cadastro de clientes</h1>
@@ -31,9 +31,9 @@
               <div class="content-item">
                 <input type="submit" value="Novo" id="btn-novo">
                 <label for="loc-nome">Nome</label>
-                <input type="text" name="loc-nome" style="margin: 3px;">
+                <input type="search" name="loc-nome" style="margin: 3px;">
                 <label for="loc-cod">Cod</label>
-                <input type="text" name="loc-cod" style="width: 30%;">
+                <input type="search" name="loc-cod" style="width: 30%;">
                 <input type="submit" value="Salvar" class="botoes">
                 <input type="submit" value="Imprimir" class="botoes">
                 <input type="submit" value="Excluir" class="botoes">
@@ -185,7 +185,26 @@
           <div class="cabeca">
             <h1>Cadastro de Fornecedores</h1>
           </div>
-          <div class="form-corpo">
+          <div class="form-corpo">  
+
+
+            <div class="content" style="border: 1px solid red;">
+              <div class="content-item">
+                <input type="submit" value="Novo" id="btn-novo">
+                <input type="submit" value="Salvar" class="botoes">
+                <input type="submit" value="Imprimir" class="botoes">
+                <input type="submit" value="Excluir" class="botoes">
+                <input type="submit" value="<<" class="botoes">
+                <input type="submit" value="<" class="botoes">
+                <input type="submit" value=">" class="botoes">
+                <input type="submit" value=">>" class="botoes">
+                <label for="loc-nome">Nome</label>
+                <input type="search" name="loc-nome" style="margin: 3px;" >
+                <label for="loc-cod">Cod</label>
+                <input type="search" name="loc-cod" style="width: 30%;">
+              </div>
+            </div>
+
             <div class="linha" style="border: 1px solid red;">
               <div class="campo-entrada">
                 <label for="cod_for">Código</label>
@@ -277,7 +296,7 @@
       </section>
     </div>
 
-    <input type="radio" name="abas" class="abas" id="aba3" checked >
+    <input type="radio" name="abas" class="abas" id="aba3"  >
     <label for="aba3" class="abas_cab">Produtos</label>
     <div>
       <section id="setor-cadastro">
@@ -287,6 +306,7 @@
             <h1>Cadastro de produtos</h1>
           </div>
           <div class="form-corpo">
+
             <div class="linha" style="border: 1px solid red;">
               <div class="campo-entrada-diverso" style="width: 20%;">
                 <label for="cod_interno_pro">Código Interno</label>
@@ -399,7 +419,7 @@
     <input type="radio" name="abas" class="abas" id="aba4">
     <label for="aba4" class="abas_cab">Relatório</label>
     <div style="color: 1px solid red;">
-      <<section id="setor-cadastro">
+      <section id="setor-cadastro">
         <form id="form-relatorio">
           <!-- Cabeçalho do Formulário -->
           <div class="cabeca">
